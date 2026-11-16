@@ -206,8 +206,6 @@ export default function Page() {
             <div className="bar">
               <i style={{ width: `${Math.min(100, r.p * 100)}%` }} />
             </div>
-            <h2>{r.p >= model.threshold ? '高于研究阈值' : '低于研究阈值'}</h2>
-            <p>仍须以规范身高体重测量和WHO年龄别BMI判定。</p>
           </section>
           <section className="panel explain">
             <h2>个体模型贡献</h2>
@@ -226,7 +224,6 @@ export default function Page() {
           </section>
         </aside>
       </div>
-      <footer>科研风险分层工具，不用于诊断、治疗或替代专业评估。</footer>
     </main>
   );
 }
